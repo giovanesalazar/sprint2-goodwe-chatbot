@@ -89,3 +89,15 @@ Use equipamentos de proteção (luvas, botas, etc.) e conte com profissionais qu
 Utilize cabos adequados (evite alumínio e cobre sólido).
 Conecte os cabos nos terminais corretos (L1, L2, L3, N, PE).
 Garanta que nenhum fio fique exposto e que tudo esteja bem fixado para evitar superaquecimento e danos.
+
+## Avaliação Qualitativa
+
+**Pergunta 1:** Adequada.
+
+**Pergunta 2:** Adequada.
+
+**Pergunta 3:** Inadequada.
+
+**Pergunta 4:** Adequada
+
+**Pergunta 5:** Adequada
