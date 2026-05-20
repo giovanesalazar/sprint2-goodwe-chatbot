@@ -22,6 +22,8 @@ Essa falta de automação gera erros operacionais, retrabalho e baixa eficiênci
   * *Justificativa:* Utilizado pela versatilidade e robustez no tratamento de dados e integração de APIs.
 * **IA/LLM:** OpenAI
   * *Justificativa:* Escolhido pela alta capacidade de interpretar linguagem natural e gerar respostas contextualizadas com base em dados operacionais de contexto e integração nativa com ferramentas de análise.
+* **Análise de Dados:** Pandas
+  * *Justificativa:* Biblioteca essencial para simular a leitura de bancos de dados de consumo e gerar relatórios precisos para o síndico.
 * **Interface:** Gradio
   * *Justificativa:* Para garantir uma interface de usuário (UI) simples, funcional e de rápido desenvolvimento.
  
