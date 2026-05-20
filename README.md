@@ -60,9 +60,11 @@ Nunca invente dados. Caso a informação não esteja disponível, informe claram
 ## Modelo de Teste (Perguntas e Respostas Esperadas)
  
 1. **Pergunta:** "Como fazer Download e Instalação do Aplicativo?"
+
    **Resposta esperada:** Método 1: Pesquise SEMS Portal no Google Play (Android) ou na App Store (iOS) para instalar; Método 2 Digitalize o código QR abaixo para instalar. 
  
 2. **Pergunta:** "Como Desmantar o carregador?"
+
    **Resposta esperada:** Etapa 1: Desconecte todos os cabos, incluindo cabos CA e de comunicação.
                           Etapa 2: Remova o carregador da placa de montagem.
                           Etapa 3: Remova a placa de montagem.
@@ -70,12 +72,15 @@ Nunca invente dados. Caso a informação não esteja disponível, informe claram
 Se o carregador precisar ser usado posteriormente, certifique-se de que as condições de armazenamento atendam aos requisito
  
 3. **Pergunta:** "Quais são as Funcionalidades?"
+
    **Resposta esperada:**  Controle dinâmico de carga e Garantir potência mínima de carregamento
  
 4. **Pergunta:** "Como Desligar o carregador?"
+
    **Resposta esperada:** Desligue o carregador antes das operações e manutenção. Caso contrário, o carregador pode ser danificado ou podem ocorrer choques elétricos.Desconecte o RCBO entre o carregador e a rede/o inversor
  
 5. **Pergunta:** "Sobre a Conexão elétrica, quais são as precauções de segurança?"
+
    **Resposta esperada:** Siga sempre as normas e leis locais para instalações elétricas.
 Desligue a energia antes de trabalhar para evitar choque elétrico.
 Organize os cabos corretamente (sem cruzar ou emaranhar) e deixe folga para evitar tensão.
