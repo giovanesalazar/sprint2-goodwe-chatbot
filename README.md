@@ -20,11 +20,9 @@ Essa falta de automação gera erros operacionais, retrabalho e baixa eficiênci
 ##  Tecnologias Selecionadas
 * **Linguagem:** Python
   * *Justificativa:* Utilizado pela versatilidade e robustez no tratamento de dados e integração de APIs.
-* **IA/LLM:** Google Gemini API
+* **IA/LLM:** OpenAI
   * *Justificativa:* Escolhido pela alta capacidade de interpretar linguagem natural e gerar respostas contextualizadas com base em dados operacionais de contexto e integração nativa com ferramentas de análise.
-* **Análise de Dados:** Pandas
-  * *Justificativa:* Biblioteca essencial para simular a leitura de bancos de dados de consumo e gerar relatórios precisos para o síndico.
-* **Interface:** Streamlit ou Flask
+* **Interface:** Gradio
   * *Justificativa:* Para garantir uma interface de usuário (UI) simples, funcional e de rápido desenvolvimento.
  
 ## Persona
@@ -47,7 +45,7 @@ O fluxo operacional compreende a entrada da dúvida do gestor, a filtragem de da
  
 ##  Contexto-Base (System Prompt)
 "Você é o GoodWe ChargeOps Assistant, um assistente especializado na gestão de eletropostos em condomínios.
-Seu objetivo é auxiliar síndicos e gestores prediais na tomada de decisão, fornecendo informações precisas sobre consumo de energia, uso das estações, faturamento e suporte técnico básico.
+Seu objetivo é auxiliar síndicos e gestores prediais na tomada de decisão, fornecendo informações precisas sobre suporte técnico básico.
  
 Você deve:
 - Utilizar os dados de logs fornecidos (CSV/JSON) para responder perguntas quantitativas
@@ -59,17 +57,28 @@ Nunca invente dados. Caso a informação não esteja disponível, informe claram
  
 ## Modelo de Teste (Perguntas e Respostas Esperadas)
  
-1. **Pergunta:** "Qual o consumo total do carregador 01 este mês?"
-   **Resposta esperada:** O consumo total do carregador 01 no mês atual é de 245 kWh, considerando os dados registrados entre o início e o final do período analisado.
+1. **Pergunta:** "Como fazer Download e Instalação do Aplicativo?"
+   **Resposta esperada:** Método 1: Pesquise SEMS Portal no Google Play (Android) ou na App Store (iOS) para instalar; Método 2 Digitalize o código QR abaixo para instalar. 
  
-2. **Pergunta:** "O apartamento 102 realizou alguma recarga hoje?"
-   **Resposta esperada:** Sim, o apartamento 102 realizou uma recarga hoje. A última sessão foi registrada às 18:45, com duração de 1h20.
+2. **Pergunta:** "Como Desmantar o carregador?"
+   **Resposta esperada:** Etapa 1: Desconecte todos os cabos, incluindo cabos CA e de comunicação.
+                          Etapa 2: Remova o carregador da placa de montagem.
+                          Etapa 3: Remova a placa de montagem.
+                          Etapa 4: Guarde o carregador adequadamente. 
+Se o carregador precisar ser usado posteriormente, certifique-se de que as condições de armazenamento atendam aos requisito
  
-3. **Pergunta:** "O que significa a luz vermelha piscando no carregador?"
-   **Resposta esperada:** A luz vermelha piscando indica uma falha no sistema. Recomenda-se verificar o aterramento do equipamento e reiniciar o carregador. Caso o problema persista, é necessário acionar o suporte técnico.
+3. **Pergunta:** "Quais são as Funcionalidades?"
+   **Resposta esperada:**  Controle dinâmico de carga e Garantir potência mínima de carregamento
  
-4. **Pergunta:** "Como faço para cadastrar um novo morador no sistema?"
-   **Resposta esperada:** Para cadastrar um novo morador, acesse o sistema de gestão do EV ChargeOps, vá até a seção de usuários, selecione "Adicionar novo usuário" e registre os dados do morador juntamente com a tag de acesso ao carregador.
+4. **Pergunta:** "Como Desligar o carregador?"
+   **Resposta esperada:** Desligue o carregador antes das operações e manutenção. Caso contrário, o carregador pode ser danificado ou podem ocorrer choques elétricos.Desconecte o RCBO entre o carregador e a rede/o inversor
  
-5. **Pergunta:** "Gere um relatório de faturamento para o Bloco A."
-   **Resposta esperada:** O faturamento total do Bloco A no período analisado é de R$ 1.250,00, considerando o consumo individual de todas as unidades e a tarifa de energia aplicada.
+5. **Pergunta:** "Sobre a Conexão elétrica, quais são as precauções de segurança?"
+   **Resposta esperada:** Siga sempre as normas e leis locais para instalações elétricas.
+Desligue a energia antes de trabalhar para evitar choque elétrico.
+Organize os cabos corretamente (sem cruzar ou emaranhar) e deixe folga para evitar tensão.
+Faça conexões bem firmes: o fio condutor deve ter contato total com o terminal.
+Use equipamentos de proteção (luvas, botas, etc.) e conte com profissionais qualificados.
+Utilize cabos adequados (evite alumínio e cobre sólido).
+Conecte os cabos nos terminais corretos (L1, L2, L3, N, PE).
+Garanta que nenhum fio fique exposto e que tudo esteja bem fixado para evitar superaquecimento e danos.
